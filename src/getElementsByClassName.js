@@ -4,10 +4,10 @@
 // };
 
 // But instead we're going to implement it from scratch:
-var getElementsByClassName = function(className,node){
+var getElementsByClassName = function(className,node, results){
   // your code here
 
-  var results = [];
+  results = results || [];
 
   //identify starting node
   node = node || document.body;
@@ -22,7 +22,7 @@ var getElementsByClassName = function(className,node){
     //iterate over children
     for (var i =0,length=node.children.length; i<length; i++) {
     //invoke recursive function
-    getElementsByClassName(className,node.children[i]);
+    getElementsByClassName(className,node.children[i], results);
    }
   }
 
