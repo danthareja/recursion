@@ -9,7 +9,6 @@ var getElementsByClassName = function(className,node){
 
   var results = [];
 
-
   //identify starting node
   node = node || document.body;
 
