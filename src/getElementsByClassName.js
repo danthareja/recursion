@@ -9,6 +9,7 @@ var getElementsByClassName = function(className,node){
 
   var results = [];
 
+
   //identify starting node
   node = node || document.body;
 
@@ -30,3 +31,4 @@ var getElementsByClassName = function(className,node){
   //return array of results
   return results;
 };
+
